@@ -6,9 +6,40 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div id="root">
-      <h1>Hola mundo!</h1>
-    </div>
+    <section id="inicio" class="">
+      <button type="button" id="instructions-button" name="buttonInstructions"> Instrucciones </button>
+      <h1> Padlock Key</h1>
+      <h2> Introduce tu contraseña / contraseña cifrada </h2>
+      <h3> (Recuerda sólo utilizar letras mayúsculas) </h3>
+      <input id="texto" type="text" placeholder="Contraseña / Contraseña Cifrada" name="password">
+      <h2>Escribe un número al azar</h2>
+      <h3>(Será tu clave de seguridad)</h3>
+      <input id="offset" type="text" placeholder="Clave de Seguridad" name="offset">
+      <button id="encode-button" type="button" name="encode-Button">Cifrar</button>
+      <button id="decode-button" type="button" name="decode-Button"> Recuperar contraseña </button>
+    </section>
+    <section id="instrucciones" class="disappear">
+      <h1> Instrucciones</h1>
+      <p> Esta aplicación te ayudará a cifrar tu contraseña para que puedas almacenarla, enviarla o anotarla en papel, sin peligro de que terceros puedan violar tu seguridad. De igual manera te ayuda a descifrar la contraseña cuando la necesites.</p>
+      <p>Para cifrar tu contraseña: </p>
+      <p> 1. Introduce tu contraseña </p>
+      <p> 2. Introduce un número aleatorio, esta será tu código de seguridad </p>
+      <p> 3. Oprime el botón cifrar a la izquierda en la pantalla de inicio</p>
+      <p> 4. ¡Listo! ya tienes tu contraseña cifrada y tu código de seguridad</p>
+      <p>Para descifrar tu contraseña:</p>
+      <p>1. Introduce la contraseña cifrada y tu código de seguridad</p>
+      <p>2. Oprime el boton "Recuperar contraseña" a la derecha de la pantalla de inicio</p>
+      <p>3. ¡Listo! ya tienes nuevamente tu contraseña lista para usar </p>
+      <button id="home1-button" type="button" name="home1"> Inicio </button>
+    </section>
+    <section id="resultado" class="disappear">
+      <h1> Tu contraseña </h1>
+      <h1 id="change">  cifrada es </h1>
+      <input type="text" id="encoded">
+      <h1 id="change-2"> Tu clave secreta es </h1>
+      <input type="text" id="coded" class="">
+      <button id="home2-button" type="button" name="home2"> Inicio </button>
+    </section>
     <script src="cipher.js"></script>
     <script src="index.js"></script>
   </body>
