@@ -7,7 +7,7 @@ const home2Button = document.getElementById("home2-button");
 const home = document.getElementById("inicio");
 const results = document.getElementById("resultado");
 const instructions=document.getElementById("instrucciones");
-const removible= document.getElementById('id');
+//const removible= document.getElementById('id');
 
 
 //Función instructions
@@ -27,6 +27,7 @@ const encode =()=>{
   home.classList.add("disappear");
   const string = document.getElementById("texto").value;
   const offset = document.getElementById("offset").value;
+  window.encode(offset, string)
   //falta agregar la función que codifica y limpiar los inputs al volver a inicio
 }
 
@@ -37,8 +38,8 @@ const decode =()=>{
   document.getElementById("change-2").innerHTML="      ";
   const coded= document.getElementById("coded");
   coded.classList.add("disappear");
-  const string = document.getElementById("texto").value;
-  const offset = document.getElementById("offset").value;
+  //const string = document.getElementById("texto").value;
+  //const offset = document.getElementById("offset").value;
   //Falta agregar la funcion que decodifica y limpiar los inputs al volver a inicio
 
 }
