@@ -27,8 +27,10 @@ const encode =()=>{
   home.classList.add("disappear");
   const string = document.getElementById("texto").value;
   const offset = document.getElementById("offset").value;
-  window.encode(offset, string)
-  //falta agregar la función que codifica y limpiar los inputs al volver a inicio
+  document.getElementById('encoded').value= window.cipher.encode(offset,string);
+  document.getElementById('key').value=offset;
+  document.getElementById("texto").value= " ";
+  document.getElementById("offset").value= " ";
 }
 
 const decode =()=>{
@@ -36,10 +38,13 @@ const decode =()=>{
   home.classList.add("disappear");
   document.getElementById("change").innerHTML="es";
   document.getElementById("change-2").innerHTML="      ";
-  const coded= document.getElementById("coded");
-  coded.classList.add("disappear");
-  //const string = document.getElementById("texto").value;
-  //const offset = document.getElementById("offset").value;
+  const key= document.getElementById("key");
+  key.classList.add("disappear");
+  const string = document.getElementById("texto").value;
+  const offset = document.getElementById("offset").value;
+  document.getElementById("encoded").value=window.cipher.decode(offset,string);
+  document.getElementById("texto").value= " ";
+  document.getElementById("offset").value= " ";
   //Falta agregar la funcion que decodifica y limpiar los inputs al volver a inicio
 
 }
@@ -49,4 +54,3 @@ home1Button.addEventListener("click", goHome);
 home2Button.addEventListener("click", goHome);
 encodeButton.addEventListener("click", encode);
 decodeButton.addEventListener("click", decode);
-//document.getElementById('encoded').value = 'hi';
