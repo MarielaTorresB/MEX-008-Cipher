@@ -1,3 +1,7 @@
 .disappear{
   display:none;
 }
+
+body {
+  background-image: url("Images/pattern.png");
+}
