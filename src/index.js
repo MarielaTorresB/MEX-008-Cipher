@@ -1,5 +1,5 @@
 //Botón que lleva a las Instrucciones
-const instructionsButton=document.getElementById("instructions-button");
+const instructionsButton=document.getElementById("instructions-button"); 
 const encodeButton=document.getElementById("encode-button");
 const decodeButton = document.getElementById("decode-button");
 const home1Button = document.getElementById("home1-button");
@@ -25,10 +25,13 @@ const goHome=()=>{
 const encode =()=>{
   results.classList.remove("disappear");
   home.classList.add("disappear");
+  key.classList.remove("disappear"); //Esta línea es para que aparezca el input con el offset sin importar que ya se haya descifrado antes
   const string = document.getElementById("texto").value;
   const offset = document.getElementById("offset").value;
-  window.encode(offset, string)
-  //falta agregar la función que codifica y limpiar los inputs al volver a inicio
+  document.getElementById('encoded').value= window.cipher.encode(offset,string);
+  document.getElementById('key').value=offset;
+  document.getElementById("texto").value= "";
+  document.getElementById("offset").value= "";
 }
 
 const decode =()=>{
@@ -36,10 +39,13 @@ const decode =()=>{
   home.classList.add("disappear");
   document.getElementById("change").innerHTML="es";
   document.getElementById("change-2").innerHTML="      ";
-  const coded= document.getElementById("coded");
-  coded.classList.add("disappear");
-  //const string = document.getElementById("texto").value;
-  //const offset = document.getElementById("offset").value;
+  const key= document.getElementById("key");
+  key.classList.add("disappear");
+  const string = document.getElementById("texto").value;
+  const offset = document.getElementById("offset").value;
+  document.getElementById("encoded").value=window.cipher.decode(offset,string);
+  document.getElementById("texto").value= "";
+  document.getElementById("offset").value= "";
   //Falta agregar la funcion que decodifica y limpiar los inputs al volver a inicio
 
 }
@@ -49,4 +55,3 @@ home1Button.addEventListener("click", goHome);
 home2Button.addEventListener("click", goHome);
 encodeButton.addEventListener("click", encode);
 decodeButton.addEventListener("click", decode);
-//document.getElementById('encoded').value = 'hi';
