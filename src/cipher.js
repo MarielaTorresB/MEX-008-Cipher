@@ -22,7 +22,8 @@ window.cipher = {
     let i=0;
     while(i<size){
       let x=string.charCodeAt(i);
-      let y=(x-(despl%26));
+      let y= (x+65-despl)%26+65;
+      //let y=(x-(despl%26));
       textodescifrado=textodescifrado + String.fromCharCode(y);
       i++;
   }
