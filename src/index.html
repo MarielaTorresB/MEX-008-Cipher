@@ -6,7 +6,8 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="" id="contenido">
+    <main class="fondo">
+  <div class="" id="contenido">
     <section id="inicio" class="">
       <button type="button" id="instructions-button" name="buttonInstructions"> Instrucciones </button>
       <h1> Padlock Key</h1>
@@ -16,6 +17,7 @@
       <h2>Escribe un número al azar</h2>
       <h3>(Será tu clave de seguridad)</h3>
       <input id="offset" type="number" placeholder="Clave de seguridad" name="offset">
+      <br>
       <button id="encode-button" type="button" name="encode-Button">Cifrar</button>
       <button id="decode-button" type="button" name="decode-Button"> Recuperar contraseña </button>
     </section>
@@ -39,10 +41,13 @@
       <input type="text" id="encoded">
       <h1 id="change-2"> Tu clave secreta es </h1>
       <input type="text" id="key" class="">
+      <br>
       <button id="home2-button" type="button" name="home2"> Inicio </button>
     </section>
+  </main>
+
     <script src="cipher.js"></script>
     <script src="index.js"></script>
-    </div>
+  </div>
   </body>
 </html>
