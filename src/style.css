@@ -3,5 +3,27 @@
 }
 
 body {
-  background-image: url("Images/pattern.png");
+  background-color: #F7CE2B;
+  background-image: url("Images/lock.png");
+  background-repeat: no-repeat;
+  background-position: right top;
+  margin-right: 400px;
+  background-attachment: fixed;
+  }
+   /*Color de fondo amarillo mostaza */
+  /* background-image: url("Images/door-padlock.jpg");
+  background-size: 100%; */
 }
+
+/* contenido {
+  background-color: white;
+}
+
+.inicio{
+  align-content: center;
+  background: #E8F7F1;
+  opacity: 0.6;
+  height: 500px;
+  width: 750px;
+}
+*/
