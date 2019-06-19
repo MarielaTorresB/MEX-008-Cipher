@@ -3,27 +3,43 @@
 }
 
 body {
-  background-color: #F7CE2B;
-  background-image: url("Images/lock.png");
-  background-repeat: no-repeat;
-  background-position: right top;
-  margin-right: 400px;
-  background-attachment: fixed;
-  }
-   /*Color de fondo amarillo mostaza */
-  /* background-image: url("Images/door-padlock.jpg");
-  background-size: 100%; */
+  background-image:url("Images/door-padlock.jpg");
+  background-size: cover;
+  color: #B044AF;
+  /* filter: blur(5px); */
 }
 
-/* contenido {
-  background-color: white;
+/*
+#inicio, #resultado, #instrucciones {
+  background-color: #A2DDC5;
+  opacity: 0.5;
+} */
+
+#contenido {
+  color: #B044AF;
 }
 
-.inicio{
-  align-content: center;
-  background: #E8F7F1;
-  opacity: 0.6;
-  height: 500px;
-  width: 750px;
+.opacity{
+   background-color:white;
+   opacity: 0.6;
+   width:1000px;
+   height: 100%;
+   position:absolute;
+   top:0px;
+}
+
+.texto {
+  color: black;
+}
+
+
+
+
+/*
+.fondo {
+  background-image:src() "Images/door-padlock.jpg";
+  background-size: cover;
+  filter: blur(5px);
+  height: 100%;
 }
 */
