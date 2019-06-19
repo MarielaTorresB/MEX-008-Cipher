@@ -9,15 +9,31 @@ body {
   /* filter: blur(5px); */
 }
 
-
+/*
 #inicio, #resultado, #instrucciones {
   background-color: #A2DDC5;
   opacity: 0.5;
-}
+} */
 
 #contenido {
   color: #B044AF;
 }
+
+.opacity{
+   background-color:white;
+   opacity: 0.6; 
+   width:1000px;
+   height: 100%;
+   position:absolute;
+   top:0px;
+}
+
+.texto {
+  color: black;
+}
+
+
+
 
 /*
 .fondo {
