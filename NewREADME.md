@@ -6,7 +6,8 @@ Los usuarios tienen estas caracterísiticas, principalmente:
 - Son hombres y mujeres de entre 18 y 44 años de edad, que comprenden aproximadamente el 54% de usuarios de internet en México (según cifras del INEGI, 2018)
 - Principalmente habitantes de zonas urbanas. 
 - Personas que gestionan una gran cantidad de cuentas (de correo, de tiendas en línea, de banca en línea, de streaming, etcétera).
-- Estos usuarios se preocupan por la seguridad de sus datos. 
+- Personas que realizan movimientos de dinero en línea (compras, transferencias, ventas)
+- Usuarios preocupados por la seguridad de sus datos. 
 
 Este producto les es de utilidad, ya que pueden generar muchas contraseñas sin necesidad de memorizarlas, simplemente las codifican y la almacenan como prefieran (las pueden envian por correo, por mensaje,en la nube, pueden apuntarlas en una nota en su celular o inclusive en papel, sin preocuparse de que terceros puedan tener acceso a esta información). En el momento que la necesiten pueden decodificarla 
 
