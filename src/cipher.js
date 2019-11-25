@@ -14,6 +14,10 @@ window.cipher = {
           let y=((x-97+despl)%26+97);
           textocifrado = textocifrado + String.fromCharCode(y);
           i++;
+        } else if (32 <= x && x <= 64) {
+          let y=((x-32+despl)%33+32);
+          textocifrado = textocifrado + String.fromCharCode(y);
+          i++;
         }
       }
       return textocifrado;
